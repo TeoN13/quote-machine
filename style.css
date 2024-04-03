@@ -1,0 +1,103 @@
+#text{
+  border: 1px solid;
+}
+main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Merriweather, serif;
+}
+
+#outer-quote-box{
+  background-color: #1e1e2d;
+  color: white;
+  text-align: center;
+  width: 70%;
+  height: 50%;
+  padding: 5px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 200px;
+  min-height: 200px;
+}
+button{
+  background-color: #37474F;
+}
+#quote-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.quote-icon{
+  width: 5%;
+  min-height: 20px;
+  min-width: 20px;
+}
+.quote-left{
+  align-self: flex-start;
+}
+.quote-right{
+  align-self: flex-end;
+}
+/* Quote text (includes the quote icons) */
+#text{
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #252535;
+/* Just the actual text */
+}
+
+#quote-text{
+  /* Font size has to be in px for JS code to work */
+  font-size: 25px;
+  /* ********************************************* */
+}
+/* Author p element */
+#author{
+  height: 15%;
+  margin-left: auto;
+}
+#button-div{
+  display: flex;
+  height: 15%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+/* Twitter button */
+#twitter{
+  align-self: flex-start;
+}
+/* New quote button */
+#new-quote{
+  align-self: flex-end;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 550px){
+  #outer-quote-box{
+    width: 85%;
+    height: 65%;
+  }
+}
+
+@media only screen and (max-height: 550px){
+  #twitter{
+    margin-bottom: 11px;
+  }
+}
